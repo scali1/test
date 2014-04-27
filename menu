@@ -1,0 +1,16 @@
+#!/bin/bash
+OPTIONS="h q y"
+
+select opt in $OPTIONS; do
+	if ["$opt"="h"]; then
+		echo hello!
+		exit
+	elif ["$opt"= "q"]; then
+		echo done!
+	elif ["$opt"= "y"]; then
+		echo continuing...
+	else
+		clear
+		echo bad option
+	fi
+done

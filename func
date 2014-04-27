@@ -1,0 +1,12 @@
+#!/bin/bash
+
+tax(){
+	echo $ $[$1*2/100]
+}
+echo Input income:
+read A
+clear
+echo your tax is: 
+tax $A 
+exit
+
